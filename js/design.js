@@ -10,7 +10,7 @@ let matchedCards = [];
 let firstClick = true;
 
 //variables for the timer
-const timer = document.getElementsByClassName("timer");
+let timer = document.querySelector("timer");
 let second, minute,
     totalTime = 0;
 let interval;    
@@ -239,21 +239,22 @@ const playAgain = document.querySelector("#playAgain");
 function showModal() {
 
     //display the modal
-    modal.classList.add(".show");
+    modal.style.display = "block";
+
     // add moves to the modal
     const modalMoves = document.querySelector(".modal_moves");
-    modalMoves.innerHTML = moves;
+    modalMoves.innerHTML = movesContainer.innerHTML;
 
     // add rate
     const modalStars = document.querySelector(".modal_stars");
-    modalStars.innerHTML = starsContainer;
+    modalStars.innerHTML = starsContainer.innerHTML;
 
     // stopTimer
     clearInterval(interval);
 
     // add time to modal
     const modalTime = document.querySelector(".modal_time");
-    modalTime = timer.innerHTML;
+    modalTime.innerHTML = document.getElementById("timer").innerHTML;
 }
 
 /*****************************************************
@@ -263,7 +264,7 @@ function showModal() {
 playAgain.addEventListener("click", function() {
 
     //hide the modal 
-    modal.classList.remove("show");
+    modal.style.display = "none";
     // start the game again
     repeat();
 });
