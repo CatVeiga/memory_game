@@ -142,7 +142,7 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.modal_container .show {
+#modal.show {
     margin: 0 auto;
     background: #ccc;
     text-align: center;
