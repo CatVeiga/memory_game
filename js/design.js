@@ -10,7 +10,7 @@ let matchedCards = [];
 let firstClick = true;
 
 //variables for the timer
-let timer = document.querySelector("timer");
+const timer = document.querySelector("timer");
 let second, minute,
     totalTime = 0;
 let interval;    
@@ -254,7 +254,7 @@ function showModal() {
 
     // add time to modal
     const modalTime = document.querySelector(".modal_time");
-    modalTime.innerHTML = document.getElementById("timer").innerHTML;
+    modalTime.innerHTML = timer.innerHTML;
 }
 
 /*****************************************************
