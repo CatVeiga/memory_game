@@ -239,7 +239,7 @@ const playAgain = document.querySelector("#playAgain");
 function showModal() {
 
     //display the modal
-
+    modal.classList.add(".show");
     // add moves to the modal
     const modalMoves = document.querySelector(".modal_moves");
     modalMoves.innerHTML = moves;
@@ -263,7 +263,7 @@ function showModal() {
 playAgain.addEventListener("click", function() {
 
     //hide the modal 
-
+    modal.classList.remove("show");
     // start the game again
     repeat();
 });
