@@ -28,7 +28,7 @@ Here is the link to view this project live, please click it below:
 
 * ### when the player finishes the game, a popup will be shown, with the score and a button to click if you want to play again, reseting all game and scores.  
 
-![Alt text](assets/)
+![Alt text](assets/screenshot6.png)
 
 # Author
 
