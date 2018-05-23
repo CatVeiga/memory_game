@@ -86,6 +86,7 @@ h1 {
     background: #896;
     font-size: 33px;
 }
+
 .deck .card.disable {
     pointer-events: none;
 }
@@ -128,27 +129,21 @@ h1 {
 .modal_container {
     display: none;
     background-color: #ccc;
-    width: 50%;
-    height: 400px;
+    width: 45%;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
     padding: 10px;
     border-radius: 10px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#modal.show {
-    margin: 0 auto;
-    background: #ccc;
-    text-align: center;
-    width: 50%;
-    height: 50%;
-    top: 50%;    
+.modal_container p {
+    font-size: 20px;
 }
 
 #modal .modal_stars {
@@ -173,5 +168,3 @@ h1 {
     font-family: "Oswald", sans-serif;
     cursor: pointer;
 }
-
-/* colocar os keyframes */
