@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Memory Game</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		
+        	</ul>
+
+            <span class="moves"></span> move(s) |
+            
+            Time: <span id="timer" class="timer"> 00 : 00</span>
+            
+            <div class="restart">
+        		<i class="fas fa-redo-alt"></i>
+        	</div>
+        </section>
+
+        <ul class="deck"></ul>
+    </div>
+
+    <!-- Modal box section -->
+    -
+    <div id="modal" class="modal_container">
+      
+        <!-- Modal content -->
+        <h1 class="modal_title"> Congratulations, you made it! </h1>
+        <h2> You won the game in:</h2> 
+        <p> Time: <span class="modal_timer"> </span> </p>
+        <p class="modal_moves"> Moves:</p>
+          <p class="modal_stars">Stars: </p>
+        <p> Great Job! <i class="em em-trophy"></i></p>
+        <button id="playAgain" class="button_modal"> Play Again </button>>
+    
+
+    <script src="js/design.js"></script>
+</body>
+</html>
