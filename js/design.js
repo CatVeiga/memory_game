@@ -28,13 +28,6 @@ function addMoves() {
     moves++;
     movesContainer.innerHTML = moves;
 
-    //start the timer on the first move, alterei verificar se esta ok
-    if(moves == 1) {
-        second = 0;
-        minute = 0;
-        startTime();
-    }
-
     //set the rating
     rating();
 }
@@ -85,6 +78,9 @@ const restartBtn = document.querySelector(".restart");
 
 restartBtn.addEventListener("click", function() {
 
+    //initialize the game
+    init();
+
     // start the game again
     repeat();
     
@@ -99,6 +95,12 @@ function click(card) {
     // Card Click Event
     card.addEventListener("click", function() {
         
+        if(firstClick) {
+            //start timer
+            startTime();
+            firstClick = false;
+        }
+
         const currentCard = this;
         const previousCard = openedCards[0];
         
@@ -130,7 +132,7 @@ function start() {
     init();
 
     //start the "click" function
-    click(card);
+    reset();
 }
 
 /******************
@@ -265,7 +267,8 @@ playAgain.addEventListener("click", function() {
 
     //hide the modal 
     modal.style.display = "none";
-    // start the game again
+    
+    //initialize the game
     repeat();
 });
 
