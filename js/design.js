@@ -10,7 +10,7 @@ let matchedCards = [];
 let firstClick = true;
 
 //variables for the timer
-const timer = document.querySelector("timer");
+const timer = document.querySelector("#timer");
 let second, minute,
     totalTime = 0;
 let interval;    
@@ -39,7 +39,7 @@ function addMoves() {
 function startTime() { 
 
     interval = setInterval(function() {
-        document.getElementById("timer").innerHTML = `${("0" + minute).slice(-2)} : ${("0" + second).slice(-2)}`;
+        timer.innerHTML = `${("0" + minute).slice(-2)} : ${("0" + second).slice(-2)}`;
 
         second++;
 
@@ -156,7 +156,7 @@ function init() {
         //reset timer
         minute = 0;
         second = 0;
-        document.getElementById("timer").innerHTML = `${("0" + minute).slice(-2)} : ${("0" + second).slice(-2)}`;
+        timer.innerHTML = `${("0" + minute).slice(-2)} : ${("0" + second).slice(-2)}`;
         clearInterval(interval);
     }
 
@@ -256,7 +256,7 @@ function showModal() {
 
     // add time to modal
     const modalTime = document.querySelector(".modal_time");
-    modalTime.innerHTML = timer.innerHTML;
+    modalTime.innerHTML = `${("0" + minute).slice(-2)} : ${("0" + second).slice(-2)}`.innerHTML; 
 }
 
 /*****************************************************
@@ -302,7 +302,7 @@ function reset() {
     minute = 0;
     second = 0;
     totalTime = 0;
-    document.getElementById("timer").innerHTML = `${("0" + minute).slice(-2)} : ${("0" + second).slice(-2)}`;
+    timer.innerHTML = `${("0" + minute).slice(-2)} : ${("0" + second).slice(-2)}`;
 }
 
 // start the game for the first time!
