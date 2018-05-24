@@ -30,6 +30,10 @@ Here is the link to view this project live, please click it below:
 
 ![Alt text](assets/screenshot6.png)
 
+# Built with
+
+![Alt text](assets/icons.png)
+
 # Author
 
 * Catarina Veiga
