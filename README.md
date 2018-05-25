@@ -10,7 +10,7 @@ Here is the link to view this project live, please click it below:
 
 ![Alt text](assets/screenshot1.png)
 
-* ### The goal of the game is to fmatch the pairs of cards in the shortest time and moves possible. In total there are 16 cards, so 8 pairs to win the game.
+* ### The goal of the game is to match the pairs of cards in the shortest time and moves possible. In total there are 16 cards, so 8 pairs to win the game.
 
 ![Alt text](assets/screenshot2.png)
 
