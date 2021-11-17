@@ -1,12 +1,21 @@
-# Memory Game
+# TABLE OF CONTENTS 
+
+## CONTENTS LIST HERE
+* INTRODUCTION
+* INSTRUCTIONS
+* BUILD WITH 
+* AUTHOR
+* AKNOWLEDGES
+
+## INTRODUCTION
 This game is a lot of fun, it's the third project, and was made during the nanodegree of Udacity. 
 
-# Deployment
+# DEPLOYMENT
 Here is the link to view this project live, please click it below:
 
 <a href="https://cveiga819.github.io/memory_game/">Memory Game</a>
 
-## Instructions
+## INSTRUCTIONS
 
 ![Alt text](assets/screenshot1.png)
 
@@ -30,15 +39,15 @@ Here is the link to view this project live, please click it below:
 
 ![Alt text](assets/screenshot6.png)
 
-# Built with
+# BUILD WITH
 
 ![Alt text](assets/icons.png)
 
-# Author
+# AUTHOR
 
 * Catarina Veiga
 
-# Aknowlegments
+# AKNOWLEDGES
 
 * Working on this project was quite tricky for me, but I'll admit it was quite challenging;
 
