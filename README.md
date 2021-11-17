@@ -13,7 +13,7 @@ This game is a lot of fun, it's the third project, and was made during the nanod
 ## DEPLOYMENT
 Here is the link to view this project live, please click it below:
 
-<a href="https://cveiga819.github.io/memory_game/">MEMORY GAME</a>
+<a href="https://catveiga.github.io/memory_game/">MEMORY GAME</a>
 
 ## INSTRUCTIONS
  
